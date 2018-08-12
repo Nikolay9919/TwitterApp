@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">TwitterApp</string>
     <string name="todo">TODO</string>
+    <string name="user_name" translatable="false"> </string>
+    <string name="user_nick" translatable="false">Имя Пользователя</string>
+    <string name="user_description" translatable="false">Описание Пользователя</string>
+    <string name="user_location" translatable="false">Местонахождение Пользователя</string>
+    <string name="following_hint" translatable="false">Читает</string>
+    <string name="followers_hint" translatable="false">Читают</string>
 </resources>

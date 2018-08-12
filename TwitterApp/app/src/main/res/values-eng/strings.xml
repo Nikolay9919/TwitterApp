@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_name" translatable="false"> User Name </string>
+    <string name="user_nick" translatable="false">User Nick</string>
+    <string name="user_description" translatable="false">User Description</string>
+    <string name="user_location" translatable="false">User Location</string>
+    <string name="following_hint" translatable="false">Following</string>
+    <string name="followers_hint" translatable="false">Followers</string>
+</resources>
