@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    android:visibility="visible">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_Image_View"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/account_name"
+        style="@style/TextView.Primary.Bold"
+        android:layout_marginLeft="@dimen/text_small_margin"
+        android:layout_marginStart="@dimen/text_small_margin"
+        android:layout_toEndOf="@id/user_Image_View"
+        android:layout_toRightOf="@id/user_Image_View"
+        android:text="Devcolibri" />
+
+    <TextView
+        android:id="@+id/author_nick_text_view"
+        style="@style/TextView.Secondary"
+        android:layout_marginLeft="@dimen/text_small_margin"
+        android:layout_marginStart="@dimen/text_small_margin"
+        android:layout_toEndOf="@id/account_name"
+        android:layout_toRightOf="@id/account_name"
+        android:text="devcolibri" />
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/TextView.Secondary"
+        android:layout_marginLeft="@dimen/text_small_margin"
+        android:layout_marginStart="@dimen/text_small_margin"
+        android:layout_toEndOf="@id/author_nick_text_view"
+        android:layout_toRightOf="@id/author_nick_text_view"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_toEndOf="@+id/date"
+        android:layout_toRightOf="@+id/user_Image_View" />
+
+    <TextView
+        android:id="@+id/tweet_content_text_view"
+        style="@style/TextView.Primary"
+        android:layout_below="@+id/author_nick_text_view"
+        android:layout_marginTop="@dimen/text_small_margin"
+        android:layout_toEndOf="@id/user_Image_View"
+        android:layout_toRightOf="@id/user_Image_View"
+        android:text="Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello  " />
+
+    <ImageView
+        android:id="@+id/tweet_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/tweet_content_text_view"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/user_Image_View"
+        android:layout_toRightOf="@id/user_Image_View"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tweet_image_view"
+        android:layout_toEndOf="@id/user_Image_View"
+        android:layout_toRightOf="@id/user_Image_View"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/retweets_container"
+            style="@style/HalfWidth"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextIcon"
+                android:text="@string/fa_retweet" />
+
+            <TextView
+                android:id="@+id/retweets_text_view"
+                style="@style/TextView.Secondary"
+                android:layout_marginLeft="@dimen/text_small_margin"
+                android:layout_marginStart="@dimen/text_small_margin"
+                android:text="16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/likes_container"
+            style="@style/HalfWidth"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextIcon"
+                android:text="@string/fa_heart_o" />
+
+            <TextView
+                android:id="@+id/likes_text_view"
+                style="@style/TextView.Secondary"
+                android:layout_marginLeft="@dimen/text_small_margin"
+                android:layout_marginStart="@dimen/text_small_margin"
+                android:text="230" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
