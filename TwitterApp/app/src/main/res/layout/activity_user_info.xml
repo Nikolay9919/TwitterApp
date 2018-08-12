@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="7dp"
     android:visibility="visible">
 
     <ImageView
@@ -46,21 +47,29 @@
         android:textSize="16sp" />
 
 
-    <TextView
-        android:id="@+id/following_text_view"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Following"
-        android:textSize="16sp" />
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/following_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Following"
+            android:textSize="16sp" />
 
 
-    <TextView
-        android:id="@+id/followers_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Followers"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/followers_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
 
+            android:text="Followers"
+            android:textSize="16sp" />
+    </LinearLayout>
 </LinearLayout>
