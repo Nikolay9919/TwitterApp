@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TwitterApp</string>
     <string name="todo">TODO</string>
-    <string name="user_name" translatable="false"> </string>
+    <string name="user_name" translatable="false">Usernamez </string>
     <string name="user_nick" translatable="false">Имя Пользователя</string>
     <string name="user_description" translatable="false">Описание Пользователя</string>
     <string name="user_location" translatable="false">Местонахождение Пользователя</string>
@@ -11,4 +11,5 @@
     <string name="search">Поиск</string>
     <string name="not_enough_symbols_msg">Введите хотя бы один символ</string>
     <string name="loading_error_msg">Ошибка при загрузке данных</string>
+    <string name="fa_map_marker">\uf041</string>
 </resources>
