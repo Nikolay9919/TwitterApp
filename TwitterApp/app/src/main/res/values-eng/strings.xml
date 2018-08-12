@@ -6,4 +6,8 @@
     <string name="user_location" translatable="false">User Location</string>
     <string name="following_hint" translatable="false">Following</string>
     <string name="followers_hint" translatable="false">Followers</string>
+    <string name="search_query_hint">Enter user name</string>
+    <string name="search_hint">search</string>
+    <string name="not_enough_symbols_msg">Please enter at least one symbol</string>
+    <string name="loading_error_msg">Error during loading info</string>
 </resources>
